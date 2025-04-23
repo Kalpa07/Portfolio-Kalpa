@@ -1,10 +1,12 @@
 import React from 'react'
 import Portfolio from './pages/Portfolio'
+import Home from './pages/Home';
+
 
 const App = () => {
   return (
     <div>
-      <Portfolio/>
+      <Home/>
     </div>
   )
 }

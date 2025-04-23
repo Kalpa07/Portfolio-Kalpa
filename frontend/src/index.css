@@ -1,1 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-dancing: 'Dancing Script', cursive;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-roboto);
+  }
+}
+
+@keyframes fly {
+  0% {
+    offset-distance: 0%;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.05);
+  }
+  100% {
+    offset-distance: 100%;
+    transform: rotate(0deg) scale(0.9);
+  }
+}
+
+@layer utilities {
+  .font-dancing {
+    font-family: var(--font-dancing);
+  }
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+
+
+  .plane-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 50;
+    pointer-events: none;
+  
+    /* Define the custom flight path */
+    offset-path: path("M 100 300 C 300 0, 500 600, 700 300");
+    offset-rotate: auto;
+  }
+  
+  .paper-plane {
+    width: auto;
+    margin-top: -335px;
+    margin-left: 650px;
+    position: absolute;
+    z-index: 20;
+  }
+
+  .skill:hover{
+    .skillText{
+      padding-left: 10px;
+      border-radius: 100px 0px 0px 100px;
+      opacity: 30%;
+      transition: ease-in-out;
+    }
+    .skillText1{
+      background: linear-gradient(45deg, #3B82F6, #272741);
+    }
+
+    .skillText2{
+      background: linear-gradient(45deg, #F87171, #272741);
+    }
+
+    .skillText3{
+      background: linear-gradient(45deg, #DDD6FE, #272741);
+    }
+
+    .skillImg{
+      margin-left: 10px;
+      transition: ease-in-out;
+    }
+  }
+
+
+  
+}
