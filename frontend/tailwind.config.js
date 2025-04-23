@@ -24,8 +24,8 @@ export default {
             secondary: "#F87171",
             accent: "#3D3E6C",
             neutral: "#C4B5FD",
-            greyish: "#3d3e6c",
-            "white": "#ffffff",
+            'base-100': "#202938",
+            white: "#ffffff",
           },
         },
         {

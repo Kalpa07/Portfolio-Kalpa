@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Github, Linkedin, FileUser } from 'lucide-react';
 import PaperPlane from '../components/plane';
 import SkillSection from "../components/skillSection";
+import HeroSection from "../components/heroSection";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,36 +40,7 @@ const ScrollSections = () => {
           className="horizontal-panel h-screen w-screen bg-cover bg-center "
           style={{ backgroundImage: "url('/images/Background.png')" }}
         >
-          <div className='flex flex-row justify-between hero-section'>
-        <div>
-          <img src='/images/lamp.png' className='h-[270px]' />
-        </div>
-        <div className='flex flex-row mt-10 justify-between gap-15 mr-15'>
-          <div className='font-poppins text-white text-100 tracking-wider'>Projects</div>
-          <div className='font-poppins text-white text-100 tracking-wider'>Contact</div>
-        </div>
-      </div>
-
-      {/* name, brief and links */}
-      <div className='flex flex-row justify-center'>
-        <div className='justify-self-center'>
-          <h1 className='font-dancing text-[160px] -rotate-[8.24deg]'>Kalpa Teli</h1>
-        </div>
-        <div className='justify-items-end justify-end mt-10 ml-[50px]'>
-          <div className='w-120 text-end'>
-            <h1 className='font-poppins font-extrabold text-3xl italic'>Frontend Developer</h1>
-            <p className='text-lg mt-2 font-light'>
-              Passionate about creating user-friendly, visually appealing web experiences, I blend clean code with thoughtful design.
-              With a background in UI/UX and frontend development, I deliver seamless digital solutions
-            </p>
-          </div>
-          <div className='flex flex-row gap-5 mt-5 mr-2'>
-            <FileUser />
-            <Github />
-            <Linkedin />
-          </div>
-        </div>
-      </div>
+          <HeroSection/>
         </div>
 
         {/* Section 2 */}
