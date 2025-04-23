@@ -93,6 +93,7 @@
       transition: ease-in-out;
     }
 
+
     .skillTextDiv1{
       background: linear-gradient(45deg, #272741, #2563EB);
     }
@@ -126,6 +127,7 @@
       margin-right: 10px;
       transition: ease-in-out;
     }
+
   }
 
 

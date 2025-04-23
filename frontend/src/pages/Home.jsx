@@ -34,19 +34,19 @@ const ScrollSections = () => {
       {/* Horizontal Scroll Section */}
       <div ref={horizontalRef} className="flex h-screen w-[200vw]">
         
-        <PaperPlane/>
+        {/* <PaperPlane/> */}
         {/* Section 1 */}
         <div
-          className="horizontal-panel h-screen w-screen bg-cover bg-center "
-          style={{ backgroundImage: "url('/images/Background.png')" }}
+          className="horizontal-panel h-screen w-screen bg-cover bg-center bg-[url('/images/phone-bg.png')] sm:bg-[url('/images/Background.png')]"
         >
           <HeroSection/>
         </div>
 
         {/* Section 2 */}
         <div
-          className="horizontal-panel h-screen w-screen ml-[-2px] bg-cover bg-center skill-section relative"
-          style={{ backgroundImage: "url('/images/Background2.png')" }}
+          className="horizontal-panel h-screen w-screen ml-[-2px] bg-cover bg-center skill-section relative
+            bg-[url('/images/phone-bg.png')] sm:bg-[url('/images/Background2.png')]
+          "
         >
           <SkillSection/>
           <div className="absolute bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-[#1e293b] pointer-events-none z-10"></div>
