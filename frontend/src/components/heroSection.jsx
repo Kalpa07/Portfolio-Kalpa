@@ -16,7 +16,7 @@ const HeroSection = () => {
           <div className='font-poppins text-white text-100 tracking-wider'>Contact</div>
         </div> */}
           {/* Desktop Nav Links */}
-        <div className='hidden sm:flex gap-10 mr-10 mt-10 font-poppins text-white text-lg tracking-wider'>
+        <div className='hidden sm:flex gap-10 mr-10 mt-10 font-poppins text-text text-lg tracking-wider'>
           <div className='cursor-pointer hover:text-gray-300'>Projects</div>
           <div className='cursor-pointer hover:text-gray-300'>Contact</div>
         </div>
@@ -25,12 +25,12 @@ const HeroSection = () => {
         <div className='sm:hidden'>
           {isSidebarOpen ? (
             <X
-              className='text-white w-6 h-6 cursor-pointer'
+              className='text-text w-6 h-6 cursor-pointer'
               onClick={() => setIsSidebarOpen(false)}
             />
           ) : (
             <Menu
-              className='text-white mr-5 mt-5 w-6 h-6 cursor-pointer'
+              className='text-text mr-5 mt-5 w-6 h-6 cursor-pointer'
               onClick={() => setIsSidebarOpen(true)}
             />
           )}

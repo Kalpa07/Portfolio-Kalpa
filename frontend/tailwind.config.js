@@ -24,7 +24,7 @@ export default {
             accent: "#3D3E6C",
             neutral: "#C4B5FD",
             'base-100': "#202938",
-            white: "#ffffff",
+            'text': "#ffffff",
           },
         },
         {
@@ -34,7 +34,7 @@ export default {
             accent: "#BBCCFA",
             neutral: "#DDD6FE",
             "base-100": "#F9FAFB",
-            "white": "#fffffff",
+            "text": "#0000000",
           },
         },
       ],

@@ -1,4 +1,6 @@
 import React from 'react';
+import '../index.css';
+
 
 const SkillSection = () => {
   return (
@@ -13,7 +15,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillText skillText2 "></div>
-                <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-white '>
+                <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>React.js</h3>
                   <span className='text-[10px] leading-[2] block'>
                     I build dynamic, reusable UI components with React.js for high-performance web applications.
@@ -25,7 +27,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillTextDiv skillTextDiv1 "></div>
-                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-white '>
+                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Angular 16</h3>
                   <span className='text-[10px] leading-[2] block'>
                     I use Angular to develop scalable, modular frontend applications with TypeScript for robust functionality.
@@ -37,10 +39,19 @@ const SkillSection = () => {
               </div>
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
-                <div className="absolute inset-0 sm:skillTextDiv skillText skillText3 sm:skillTextDiv3 "></div>
-                <div className='inset-0 text-end sm:text-start pl-[95px] sm:pr-[95px] pt-[5px] pr-[5px] sm:pl-[5px] self-end sm:self-start w-[260px] sm:w-[380px] h-30 textSkill text-white '>
+                {/* <div className="absolute inset-0 skillText sm:skillTextDiv skillText3 sm:skillTextDiv3 "></div> */}
+                <div className="absolute inset-0 skillText sm:skillTextDiv bg-gradient-to-r from-[#C4B5FD] to-[#272741] sm:bg-gradient-to-r sm:from-[#272741] sm:to-[#C4B5FD]"></div>
+
+                <div className=' inset-0 
+                      text-end sm:text-start 
+                      pl-[95px] sm:pr-[95px] 
+                      pt-[5px] pr-[5px] sm:pl-[5px] 
+                      self-end sm:self-start 
+                      w-[260px] sm:w-[380px] 
+                      h-30 
+                      textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Figma</h3>
-                  <span className='text-[10px] leading-[2] block'>
+                  <span className='text-[10px] leading-[2] block sm:text-base sm:leading-normal sm:flex'>
                   I design user-friendly interfaces in Figma for smooth UI/UX collaboration and prototyping.
                   </span>
                 </div>
@@ -50,7 +61,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillTextDiv sm:skillText skillTextDiv1 sm:skillText1 "></div>
-                <div className='inset-0 text-start sm:text-end pr-[95px] sm:pl-[95px] pt-[5px] pl-[5px] sm:pr-[5px] self-start sm:self-end w-[260px] sm:w-[380px] textSkillDiv text-white '>
+                <div className='inset-0 text-start sm:text-end pr-[95px] sm:pl-[95px] pt-[5px] pl-[5px] sm:pr-[5px] self-start sm:self-end w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Tailwind CSS</h3>
                   <span className='text-[10px] leading-[2] block'>
                     I use Tailwind CSS for fast, responsive styling with utility-first classes.
@@ -62,7 +73,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillText skillText3 "></div>
-                <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-white '>
+                <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic'>TypeScript</h3>
                   <span className='text-[10px] leading-[2] block'>
                     I use TypeScript to enhance code quality and maintainability with static typing.  
@@ -74,7 +85,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillTextDiv skillTextDiv2 "></div>
-                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] h-30 textSkillDiv text-white '>
+                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] h-30 textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>HTML/CSS/JS</h3>
                   <span className='text-[10px] leading-[2] block'>
                   I build responsive web pages with HTML, CSS, and JavaScript for structure and interactivity.
