@@ -40,6 +40,9 @@
     font-family: var(--font-poppins);
   }
 
+  *{
+    color:"primary";
+  }
 
   .plane-container {
     position: absolute;
@@ -129,7 +132,13 @@
     }
 
   }
-
-
   
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -5,6 +5,23 @@ import { Menu, X } from 'lucide-react';
 
 const HeroSection = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const scrollTo = (id) => {
+    // disable CSS snap while JS scrolls
+    document.documentElement.classList.add("nosnap");
+
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+
+    // after 1s, re‐enable snap (adjust timeout to match your scroll duration)
+    setTimeout(
+      () => document.documentElement.classList.remove("nosnap"),
+      1000
+    );
+  };
+
   return (
     <>
       <div className='flex flex-row justify-between hero-section'>
@@ -17,8 +34,8 @@ const HeroSection = () => {
         </div> */}
           {/* Desktop Nav Links */}
         <div className='hidden sm:flex gap-10 mr-10 mt-10 font-poppins text-text text-lg tracking-wider'>
-          <div className='cursor-pointer hover:text-gray-300'>Projects</div>
-          <div className='cursor-pointer hover:text-gray-300'>Contact</div>
+          <div className='cursor-pointer hover:text-gray-300 hover:underline' onClick={() => scrollTo("projects")} >Projects</div>
+          <div className='cursor-pointer hover:text-gray-300 hover:underline' onClick={() => scrollTo("contact")}>Contact</div>
         </div>
 
         {/* Hamburger Menu for Mobile */}

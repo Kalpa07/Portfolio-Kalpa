@@ -40,7 +40,7 @@ const SkillSection = () => {
 
               <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 {/* <div className="absolute inset-0 skillText sm:skillTextDiv skillText3 sm:skillTextDiv3 "></div> */}
-                <div className="absolute inset-0 skillText sm:skillTextDiv bg-gradient-to-r from-[#C4B5FD] to-[#272741] sm:bg-gradient-to-r sm:from-[#272741] sm:to-[#C4B5FD]"></div>
+                <div className="absolute inset-0 skillText sm:skillTextDiv hover:bg-gradient-to-r from-[#C4B5FD] to-[#272741] sm:bg-gradient-to-r sm:from-[#272741] sm:to-[#C4B5FD]"></div>
 
                 <div className=' inset-0 
                       text-end sm:text-start 
