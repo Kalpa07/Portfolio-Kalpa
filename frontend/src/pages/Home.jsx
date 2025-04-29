@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import PaperPlane from '../components/plane';
@@ -9,6 +9,7 @@ import Contact from "../components/contact";
 import About from "../components/about";
 import { Github, Linkedin, Mail } from 'lucide-react';
 import CursorGlow from "../components/cursorGlow";
+import Bubbles from "../components/Bubbles";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,6 +17,18 @@ gsap.registerPlugin(ScrollTrigger);
 const ScrollSections = () => {
   const horizontalRef = useRef(null);
 
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
+
+    useEffect(() => {
+      console.log('Theme applied:', theme);
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'darktheme' : 'lighttheme');
+      localStorage.setItem('theme', theme);
+    }, [theme]);
+
+  const handleThemeToggle = () => {
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+  };
   useEffect(() => {
     const sections = gsap.utils.toArray(".horizontal-panel");
 
@@ -100,7 +113,7 @@ const ScrollSections = () => {
       <div
         className="horizontal-panel h-screen w-screen bg-cover bg-center bg-[url('/images/phone-bg.png')] sm:bg-[url('/images/Background.png')] snap-start"
       >
-        <HeroSection />
+        <HeroSection handleThemeToggle={handleThemeToggle}/>
       </div>
   
       {/* Section 2 */}
@@ -126,6 +139,7 @@ const ScrollSections = () => {
         <Contact />
       </div>
       <div className="h-screen bg-greyish flex flex-col justify-between items-center text-text text-4xl snap-start">
+        {/* <Bubbles/> */}
         <About className="" />
         <div className="bg-primary h-10 w-full bottom-0 flex justify-between">
           <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>kalpateli0711@gmail.com</h4>
@@ -136,7 +150,9 @@ const ScrollSections = () => {
             <div className='self-center'>
               <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/" ><Linkedin className='text-white'></Linkedin></a>
             </div>
-            <div className='self-center'><Mail className='text-white'></Mail></div>
+            <div className='self-center'>
+            <a href="mailto:hikalpa07@gmail.com"><Mail className='text-white'></Mail></a>
+            </div>
           </div>
         </div>
       </div>

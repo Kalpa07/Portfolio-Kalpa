@@ -62,12 +62,15 @@ const Contact = () => {
           Paper planes, pixels, and possibilities!
         </h2>
         <hr className="w-150 text-sm ml-[20px] mb-5 mt-5 text-text"></hr>
-        <p className="text-text w-180 text-2xl">
+        <p className=" w-180 text-2xl">
           Have an idea flying around in your mind? Let’s catch it together. <br />
           I’m just a message away — say{' '}
           <span className="italic font-poppins text-3xl bolder">Hi!</span> and
           let’s turn your vision into something beautiful.
         </p>
+          <span className='text-xl'>
+            Or, if you prefer, <a href="mailto:hikalpa07@gmail.com" className='underline'>email me directly!</a>
+          </span>
       </div>
       <div className="flex flex-col p-2">
         <form onSubmit={handleSubmit}>
@@ -107,7 +110,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="text-text hover:cursor-pointer bg-primary hover:scale-105 transform transition-transform duration-300 text-xl hover:border p-2 px-5 rounded-3xl w-40 mt-10"
+              className="text-text hover:cursor-pointer btn btn-primary hover:scale-105 transform transition-transform duration-300 text-xl hover:border p-2 px-5 rounded-3xl w-40 mt-10"
               disabled={loading}
             >
               {loading ? 'Sending...' : 'Send'}
