@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import Portfolio from './pages/Portfolio'
+import Projects from './pages/Projects';
 import Home from './pages/Home';
+import { Route,Routes } from 'react-router-dom';
 
 
 const App = () => {
@@ -12,7 +14,7 @@ const App = () => {
 
   if(selectedTheme){
     document.body.classList.add(selectedTheme);
-  }else if(window.matchMedia("(prefers-color-scheme:dark")){
+  }else if(window.matchMedia("(prefers-color-scheme: dark)").matches){
     document.body.classList.add('dark');
   }
   else{
@@ -23,7 +25,10 @@ const App = () => {
 
   return (
     <div className="data-theme:selectedTheme">
-      <Home/>
+     <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/projects" element={<Projects/>}/>
+    </Routes>
     </div>
   )
 }

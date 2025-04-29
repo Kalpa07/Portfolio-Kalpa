@@ -9,6 +9,43 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
+:root {
+  --primary:#3B82F6;
+  --color-cta:#F87171;
+  --text:#ffffff;
+  --neutral:#C4B5FD;
+  --base-100:#1E293B;
+  --accent:#3D3E6C;
+  --cta-hover: #CC6060;
+
+  background: rgba(var(--base-100));
+}
+
+[data-theme="lighttheme"] {
+  --primary:#2563EB;
+  --color-cta:#F87171;
+  --text:#000000;
+  --neutral:#DDD6FE;
+  --base-100:#F9FAFB;
+  --accent:#BBCCFA;
+  --cta-hover: #CC6060;
+
+  background: rgba(var(--base-100));
+}
+
+[data-theme="darktheme"] {
+  --primary:#3B82F6;
+  --color-cta:#F87171;
+  --text:#ffffff;
+  --neutral:#C4B5FD;
+  --base-100:#202938;
+  --accent:#3D3E6C;
+  --cta-hover: #CC6060;
+
+  background: rgba(var(--base-100));
+}
+
+
 @layer base {
   html {
     font-family: var(--font-roboto);
@@ -38,10 +75,6 @@
   }
   .font-poppins {
     font-family: var(--font-poppins);
-  }
-
-  *{
-    color:"primary";
   }
 
   .plane-container {

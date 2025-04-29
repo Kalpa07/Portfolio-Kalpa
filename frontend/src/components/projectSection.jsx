@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import CursorCustom from "../components/cursorProject";
+import { useNavigate } from "react-router-dom";
 
 const ProjectSection = () => {
   const [isHoveringButton, setIsHoveringButton] = useState(false);
+  const navigate = useNavigate();
 
   return (
     // mt-20s
@@ -16,6 +18,7 @@ const ProjectSection = () => {
       <div className="absolute z-10 h-150 flex items-center">
         <button
           type="button"
+          onClick={()=>{navigate("/projects")}}
           onMouseEnter={() => setIsHoveringButton(true)}
           onMouseLeave={() => setIsHoveringButton(false)}
           className="bg-cta-hover border-color-cta border-6 w-60 h-18 
