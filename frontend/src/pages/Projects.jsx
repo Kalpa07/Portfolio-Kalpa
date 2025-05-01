@@ -52,16 +52,16 @@ const Projects = () => {
                     <h1 >Projects</h1>
                 </div>
             </div>
-            <div className='flex flex-row sm:grid 
+            <div className='flex flex-row sm:grid sm:justify-items-center
                 overflow-x-auto sm:overflow-visible 
                 gap-x-5 sm:grid-cols-2 ml-2
-                pl-5 sm:pl-10 pr-5 sm:pr-0 
+                pl-10 pr-5 sm:pr-0 
                 snap-x snap-mandatory'>
                 {projectData.map((project, index) => {
                     const isExpanded = expandedIndex === index;
 
                     return (
-                        <div key={index} className="flex flex-col relative snap-start mt-60 sm:mt-5  mb-60 sm:mb-0">
+                        <div key={index} className="flex flex-col relative snap-start ml-10 mt-60 sm:mt-5  mb-60 sm:mb-0">
                             <h2 className={`
                             text-4xl font-bold z-20 transition-all duration-[2000ms] ease-in-out w-max
                             ${isExpanded || hoveredIndex === index
