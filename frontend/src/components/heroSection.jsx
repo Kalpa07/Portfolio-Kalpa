@@ -59,9 +59,9 @@ const HeroSection = ({  handleThemeToggle }) => {
           <h1 className='font-dancing text-[70px] -rotate-[8.24deg] mt-20 sm:text-[160px]'>Kalpa Teli</h1>
         </div>
         <div className='sm:justify-items-end justify-end mt-50 sm:mt-10 ml-[50px]'>
-          <div className='w-70 sm:w-120 sm:text-end'>
+          <div className='w-80 sm:w-120 sm:text-end'>
             <h1 className='font-poppins font-extrabold text-lg sm:text-3xl italic'>Frontend Developer</h1>
-            <p className='text-xs sm:text-lg mt-2 font-light'>
+            <p className='text-md sm:text-lg mt-2 font-light'>
               Passionate about creating user-friendly, visually appealing web experiences, I blend clean code with thoughtful design.
               With a background in UI/UX and frontend development, I deliver seamless digital solutions
             </p>

@@ -43,21 +43,25 @@ const Projects = () => {
     return (
         <div className=''>
             <div className='flex justify-between text-4xl mb-5 mt-5 '>
-                <div className="ml-15">
+                <div className="ml-5 sm:ml-15">
                     <a href="/" className="">
                         <CircleArrowLeft className='!w-[50px] !h-[50px]'/>
                     </a>
                 </div>
-                <div className="  bg-primary w-100 p-2">
+                <div className="  bg-primary w-70 sm:w-100 p-2">
                     <h1 >Projects</h1>
                 </div>
             </div>
-            <div className='flex flex-col sm:grid justify-items-center sm:grid-cols-2 pl-10 gap-x-5 sm:gap-x-10 gap-y-5'>
+            <div className='flex flex-row sm:grid 
+                overflow-x-auto sm:overflow-visible 
+                gap-x-5 sm:grid-cols-2 ml-2
+                pl-5 sm:pl-10 pr-5 sm:pr-0 
+                snap-x snap-mandatory'>
                 {projectData.map((project, index) => {
                     const isExpanded = expandedIndex === index;
 
                     return (
-                        <div key={index} className="flex flex-col relative">
+                        <div key={index} className="flex flex-col relative snap-start mt-60 sm:mt-5  mb-60 sm:mb-0">
                             <h2 className={`
                             text-4xl font-bold z-20 transition-all duration-[2000ms] ease-in-out w-max
                             ${isExpanded || hoveredIndex === index
@@ -118,7 +122,7 @@ const Projects = () => {
             </div>
             <div className='flex justify-between text-4xl mb-5 mt-5'>
                 <div className="bg-primary p-2">
-                    <a href="https://github.com/Kalpa07" className=" ml-50">
+                    <a href="https://github.com/Kalpa07" className=" ml-40 mr-5">
                         More Projects
                     </a>
                 </div>
