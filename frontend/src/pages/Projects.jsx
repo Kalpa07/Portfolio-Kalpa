@@ -81,7 +81,7 @@ const Projects = () => {
                                         style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                         onMouseEnter={() => setHoveredIndex(index)}
                                         onMouseLeave={() => setHoveredIndex(null)}>
-                                        <div className={`${isExpanded ? 'hidden' : 'visible'} inset-0 z-10 bg-primary opacity-60 rounded-10 
+                                        <div className={`${isExpanded ? 'hidden' : 'visible'} inset-0 z-10 bg-primary opacity-80 rounded-10 
                                         h-full w-120 absolute transition-all duration-[500ms] ease-in-out group-hover:-translate-y-full`
                                         } />
                                     </div>

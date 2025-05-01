@@ -13,7 +13,7 @@ const SkillSection = () => {
           <div className='mb-2 '>
             <div className='flex flex-col sm:grid sm:grid-cols-2 gap-x-16 sm:gap-x-30 gap-y-2 sm:gap-y-5 '>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+              <div className='relative flex flex-col justify-center order-1 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillText skillText2 "></div>
                 <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>React.js</h3>
@@ -25,7 +25,7 @@ const SkillSection = () => {
                 style={{ backgroundImage: "url('/images/react.png')" }}></div>
               </div>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+              <div className='relative flex flex-col justify-center order-2 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillTextDiv skillTextDiv1 "></div>
                 <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Angular 16</h3>
@@ -38,40 +38,31 @@ const SkillSection = () => {
                 </div>
               </div>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
-                {/* <div className="absolute inset-0 skillText sm:skillTextDiv skillText3 sm:skillTextDiv3 "></div> */}
-                <div className="absolute inset-0 skillText sm:skillTextDiv hover:bg-gradient-to-r from-[#C4B5FD] to-[#272741] sm:bg-gradient-to-r sm:from-[#272741] sm:to-[#C4B5FD]"></div>
-
-                <div className=' inset-0 
-                      text-end sm:text-start 
-                      pl-[95px] sm:pr-[95px] 
-                      pt-[5px] pr-[5px] sm:pl-[5px] 
-                      self-end sm:self-start 
-                      w-[260px] sm:w-[380px] 
-                      h-30 
-                      textSkill text-text '>
+              <div className='relative flex flex-col justify-center order-3 sm:order-4 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+                <div className="absolute inset-0 skillText skillText2 "></div>
+                <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Figma</h3>
-                  <span className='text-[10px] leading-[2] block sm:text-base sm:leading-normal sm:flex'>
+                  <span className='text-[10px] leading-[2] block'>
                   I design user-friendly interfaces in Figma for smooth UI/UX collaboration and prototyping.
                   </span>
                 </div>
-                <div className="absolute bg-base-100 z-10 rounded-full sm:self-end h-20 w-20 sm:h-30 sm:w-30 ml-[10px] skillImg1 bg-cover" 
+                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover" 
                 style={{ backgroundImage: "url('/images/figma.png')" }}></div>
               </div>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
-                <div className="absolute inset-0 skillTextDiv sm:skillText skillTextDiv1 sm:skillText1 "></div>
-                <div className='inset-0 text-start sm:text-end pr-[95px] sm:pl-[95px] pt-[5px] pl-[5px] sm:pr-[5px] self-start sm:self-end w-[260px] sm:w-[380px] textSkillDiv text-text '>
+              <div className='relative flex flex-col justify-center order-4 sm:order-3 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+                <div className="absolute inset-0 skillTextDiv1 skillTextDiv "></div>
+                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Tailwind CSS</h3>
                   <span className='text-[10px] leading-[2] block'>
-                    I use Tailwind CSS for fast, responsive styling with utility-first classes.
+                  I use Tailwind CSS for fast, responsive styling with utility-first classes.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full self-end sm:self-start h-20 w-20 sm:h-30 sm:w-30 shadow-lg mr-[10px] skillImg bg-cover" 
-                style={{ backgroundImage: "url('/images/tailwind.png')"}}></div>
+                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover" 
+                style={{ backgroundImage: "url('/images/tailwind.png')" }}></div>
               </div>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+              <div className='relative flex flex-col justify-center order-5 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillText skillText3 "></div>
                 <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic'>TypeScript</h3>
@@ -83,9 +74,9 @@ const SkillSection = () => {
                 style={{ backgroundImage: "url('/images/ts.png')" }}></div>
               </div>
 
-              <div className='relative flex flex-col justify-center h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
+              <div className='relative flex flex-col justify-center order-6 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
                 <div className="absolute inset-0 skillTextDiv skillTextDiv2 "></div>
-                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] h-30 textSkillDiv text-text '>
+                <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>HTML/CSS/JS</h3>
                   <span className='text-[10px] leading-[2] block'>
                   I build responsive web pages with HTML, CSS, and JavaScript for structure and interactivity.

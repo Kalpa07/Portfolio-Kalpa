@@ -13,7 +13,8 @@ const ProjectSection = () => {
       
       <CursorCustom isHoveringButton={isHoveringButton} />
       <div className="absolute inset-0 w-max justify-self-center">
-        <img src="/images/uiPaper-bg.png" className="h-150" />
+        <img src="/images/uiPhoneBg.png" className="h-150 visible sm:hidden" />
+        <img src="/images/uiPaper-bg.png" className="h-150 hidden sm:block" />
       </div>
       <div className="absolute z-10 h-150 flex items-center">
         <button
