@@ -7,7 +7,7 @@ import HeroSection from "../components/heroSection";
 import ProjectSection from "../components/projectSection";
 import Contact from "../components/contact";
 import About from "../components/about";
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Copyright, Github, Linkedin, Mail } from 'lucide-react';
 import CursorGlow from "../components/cursorGlow";
 import Bubbles from "../components/Bubbles";
 
@@ -142,16 +142,27 @@ const ScrollSections = () => {
         {/* <Bubbles/> */}
         <About className="" />
         <div className="bg-primary h-10 w-full bottom-0 flex justify-between">
-          <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>kalpateli0711@gmail.com</h4>
+          <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>
+            <Copyright className="inline h-4 w-4"/> Kalpa Teli 2025
+          </h4>
           <div className='flex gap-4 mr-5'>
-            <div className='self-center'>
-              <a href="https://github.com/Kalpa07" ><Github className='text-white'></Github></a>
+            <div className='relative group self-center w-8'>
+              <a href="https://github.com/Kalpa07" ><Github className='text-white hover:h-7 hover:w-7'></Github></a>
+              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
+                Github
+              </div>
             </div>
-            <div className='self-center'>
-              <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/" ><Linkedin className='text-white'></Linkedin></a>
+            <div className='relative group self-center w-8'>
+              <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/" ><Linkedin className='text-white hover:h-7 hover:w-7'></Linkedin></a>
+              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
+                LinkedIn
+              </div>
             </div>
-            <div className='self-center'>
-            <a href="mailto:hikalpa07@gmail.com"><Mail className='text-white'></Mail></a>
+            <div className='relative group self-center w-8'>
+              <a href="mailto:hikalpa07@gmail.com"><Mail className='text-white hover:h-7 hover:w-7'></Mail></a>
+              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
+                Email Me
+              </div>
             </div>
           </div>
         </div>

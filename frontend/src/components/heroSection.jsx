@@ -43,13 +43,13 @@ const HeroSection = ({  handleThemeToggle }) => {
       </div>
 
       {/* Mobile Sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-[70%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${
+      <div className={`fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${
         isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className='flex flex-col items-end p-6 gap-6 text-text font-poppins text-lg'>
           <X className='w-8 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
-          <div onClick={() => setIsSidebarOpen(false)} className='cursor-pointer mr-15'>Projects</div>
-          <div onClick={() => setIsSidebarOpen(false)} className='cursor-pointer mr-15'>Contact</div>
+          <div onClick={() => {scrollTo("projects");setIsSidebarOpen(false)}} className='cursor-pointer text-center p-2 w-40 active:bg-primary mr-5'>Projects</div>
+          <div onClick={() =>  {scrollTo("contact");setIsSidebarOpen(false)}} className='cursor-pointer text-center p-2 w-40 active:bg-primary mr-5'>Contact</div>
         </div>
       </div>
 
