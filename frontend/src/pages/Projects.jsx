@@ -1,32 +1,33 @@
+import { CircleArrowLeft, SendToBack, StepBack } from 'lucide-react';
 import { React, useState } from 'react'
 const projectData = [
     {
         title: "Nexvent",
-        description: "A MERN stack app suggesting global online/offline events...",
+        description: "A global event discovery app (excluding personal events), designed in Figma and built using React. Features a clean UI for browsing online and offline events. Backend integration planned.",
         github: "https://github.com/Kalpa07/Nexvent",
         live: "https://nexvent.netlify.app/",
-        image: "../../public/images/bgNexvent.png"
+        image: "/images/bgNexvent.png"
     },
     {
         title: "HRMS",
-        description: "A training project built with Angular 16...",
+        description: "A training project built with Angular 16, featuring employee list, leave, and attendance modules with reusable components and basic form validation.",
         github: "https://github.com/Kalpa07/Angular-Practice",
         live: "",
-        image: "../../public/images/bgNexvent.png"
+        image: "/images/bgHrms.png"
     },
     {
         title: "Personal Portfolio",
-        description: "An animated personal portfolio showcasing my skills...",
+        description: "An animated personal portfolio showcasing my skills and projects. Featuring smooth transitions, paper plane animation, and a light/dark theme toggle, built with HTML, CSS, JavaScript, and Tailwind.",
         github: "https://github.com/Kalpa07/Portfolio-Kalpa",
         live: "https://kalpa-portfolio.com",
-        image: "../../public/images/bgPortfolio.png"
+        image: "/images/bgPortfolio.png"
     },
     {
         title: "Next Project",
         description: "In Progress...",
         github: "",
         live: "",
-        image: "../../public/images/BackgroundLight.png"
+        image: "/images/BackgroundLight.png"
     }
 ];
 
@@ -41,9 +42,14 @@ const Projects = () => {
     };
     return (
         <div className=''>
-            <div className='flex justify-between text-4xl mb-5 mt-5'>
-                <div className="bg-primary p-2">
-                    <h1 className=" ml-50">Projects</h1>
+            <div className='flex justify-between text-4xl mb-5 mt-5 '>
+                <div className="ml-15">
+                    <a href="/" className="">
+                        <CircleArrowLeft className='!w-[50px] !h-[50px]'/>
+                    </a>
+                </div>
+                <div className="  bg-primary w-100 p-2">
+                    <h1 >Projects</h1>
                 </div>
             </div>
             <div className='flex flex-col sm:grid justify-items-center sm:grid-cols-2 pl-10 gap-x-5 sm:gap-x-10 gap-y-5'>
@@ -110,13 +116,13 @@ const Projects = () => {
                     );
                 })}
             </div>
-            <div className='flex justify-end text-4xl mb-5 mt-5'>
-            <div className="  bg-primary w-100 p-2">
-                <a href="https://github.com/Kalpa07">
-                More Projects
-                </a>
+            <div className='flex justify-between text-4xl mb-5 mt-5'>
+                <div className="bg-primary p-2">
+                    <a href="https://github.com/Kalpa07" className=" ml-50">
+                        More Projects
+                    </a>
+                </div>
             </div>
-        </div>
         </div>
     )
 }
