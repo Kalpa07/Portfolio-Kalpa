@@ -54,7 +54,7 @@ const ScrollSections = () => {
     <CursorGlow />
     <div ref={horizontalRef} className="flex h-screen w-[200vw] snap-x snap-start">
   
-      {/* <PaperPlane/> */}
+      <PaperPlane/>
       {/* Section 1 */}
       <div
         className="horizontal-panel h-screen w-screen bg-cover bg-center bg-[url('/images/phone-bg.png')] sm:bg-[url('/images/Background.png')] snap-start"

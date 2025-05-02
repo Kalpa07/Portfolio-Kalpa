@@ -43,30 +43,30 @@ const HeroSection = ({  handleThemeToggle }) => {
       </div>
 
       {/* Mobile Sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${
+      <div className={` fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${
         isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
-        <div className='flex flex-col items-end p-6 gap-6 text-text font-poppins text-lg'>
+        <div className='relative flex flex-col items-end p-6 gap-6 text-text font-poppins text-lg'>
           <X className='w-8 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
-          <div onClick={() => {scrollTo("projects");setIsSidebarOpen(false)}} className='cursor-pointer text-center p-2 w-40 active:bg-primary mr-5'>Projects</div>
-          <div onClick={() =>  {scrollTo("contact");setIsSidebarOpen(false)}} className='cursor-pointer text-center p-2 w-40 active:bg-primary mr-5'>Contact</div>
+          <div onClick={() => {scrollTo("projects");setIsSidebarOpen(false)}} className='absolute mt-15 cursor-pointer text-center p-2 w-40 active:bg-primary '>Projects</div>
+          <div onClick={() =>  {scrollTo("contact");setIsSidebarOpen(false)}} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary '>Contact</div>
         </div>
       </div>
 
       {/* Name, Description, Socials */}
       <div className='sm:flex flex-row justify-center'>
         <div className='justify-self-center'>
-          <h1 className='font-dancing text-[100px] -rotate-[8.24deg] mt-50 sm:mt-10 sm:text-[160px]'>Kalpa Teli</h1>
+          <h1 className='font-dancing text-[80px] -rotate-[8.24deg] mt-20 sm:mt-10 sm:text-[160px]'>Kalpa Teli</h1>
         </div>
-        <div className='sm:justify-items-end justify-end mt-60 sm:mt-20 ml-[50px]'>
-          <div className='w-100 sm:w-120 sm:text-end'>
-            <h1 className='font-poppins font-extrabold text-xl sm:text-3xl italic'>Frontend Developer</h1>
-            <p className='text-lg sm:text-xl mt-2 font-light'>
+        <div className=' flex flex-row sm:flex-col sm:justify-items-end justify-end mt-40 sm:mt-20 ml-[50px]'>
+          <div className='w-100 sm:w-120 sm:text-end order-2 sm:order-1'>
+            <h1 className='font-poppins font-extrabold text-lg sm:text-3xl italic'>Frontend Developer</h1>
+            <p className='text-md sm:text-xl mt-2 font-light'>
               Passionate about creating user-friendly, visually appealing web experiences, I blend clean code with thoughtful design.
               With a background in UI/UX and frontend development, I deliver seamless digital solutions
             </p>
           </div>
-          <div className='flex flex-row gap-5 mt-5 mr-2'>
+          <div className='flex flex-col sm:flex-row sm:self-end gap-5 mt-10 sm:mt-5 mr-5 sm:mr-2 order-1 sm:order-2'>
             <a href="/documents/Resume-KalpaTeli.pdf" target="_blank" rel="noopener noreferrer" download><FileUser className='height-[20px]' /></a>
             <a href="https://github.com/Kalpa07"><Github className='height-[20px]' /></a>
             <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/"><Linkedin className='height-[20px]' /></a>
