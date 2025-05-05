@@ -1,7 +1,6 @@
 import React from 'react';
 import '../index.css';
 
-
 const SkillSection = () => {
   return (
     <>
@@ -21,8 +20,8 @@ const SkillSection = () => {
                     I build dynamic, reusable UI components with React.js for high-performance web applications.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover" 
-                style={{ backgroundImage: "url('/images/react.png')" }}></div>
+                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
+                  style={{ backgroundImage: "url('/images/react.png')" }}></div>
               </div>
 
               <div className='relative flex flex-col justify-center order-2 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
@@ -33,8 +32,8 @@ const SkillSection = () => {
                     I use Angular to develop scalable, modular frontend applications with TypeScript for robust functionality.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 skillImg1 shadow-lg bg-cover" 
-                style={{ backgroundImage: "url('/images/angular.png')" }}>
+                <div className="absolute z-10 bg-base-100 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 skillImg1 shadow-lg bg-cover"
+                  style={{ backgroundImage: "url('/images/angular.png')" }}>
                 </div>
               </div>
 
@@ -43,11 +42,11 @@ const SkillSection = () => {
                 <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Figma</h3>
                   <span className='text-[10px] leading-[2] block'>
-                  I design user-friendly interfaces in Figma for smooth UI/UX collaboration and prototyping.
+                    I design user-friendly interfaces in Figma for smooth UI/UX collaboration and prototyping.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover" 
-                style={{ backgroundImage: "url('/images/figma.png')" }}></div>
+                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
+                  style={{ backgroundImage: "url('/images/figma.png')" }}></div>
               </div>
 
               <div className='relative flex flex-col justify-center order-4 sm:order-3 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
@@ -55,11 +54,11 @@ const SkillSection = () => {
                 <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>Tailwind CSS</h3>
                   <span className='text-[10px] leading-[2] block'>
-                  I use Tailwind CSS for fast, responsive styling with utility-first classes.
+                    I use Tailwind CSS for fast, responsive styling with utility-first classes.
                   </span>
                 </div>
-                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover" 
-                style={{ backgroundImage: "url('/images/tailwind.png')" }}></div>
+                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
+                  style={{ backgroundImage: "url('/images/tailwind.png')" }}></div>
               </div>
 
               <div className='relative flex flex-col justify-center order-5 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
@@ -67,11 +66,11 @@ const SkillSection = () => {
                 <div className='inset-0 text-end pl-[95px] pt-[5px] pr-[5px] self-end w-[260px] sm:w-[380px] textSkill text-text '>
                   <h3 className='text-sm sm:text-xl italic'>TypeScript</h3>
                   <span className='text-[10px] leading-[2] block'>
-                    I use TypeScript to enhance code quality and maintainability with static typing.  
+                    I use TypeScript to enhance code quality and maintainability with static typing.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full sm:bg-[length:120px] bg-[length:80px] h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-fit bg-no-repeat " 
-                style={{ backgroundImage: "url('/images/ts.png')" }}></div>
+                <div className="absolute z-10 bg-base-100 rounded-full sm:bg-[length:120px] bg-[length:80px] h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-fit bg-no-repeat "
+                  style={{ backgroundImage: "url('/images/ts.png')" }}></div>
               </div>
 
               <div className='relative flex flex-col justify-center order-6 h-25 w-70 sm:h-34 sm:w-100 overflow-hidden skill'>
@@ -79,11 +78,11 @@ const SkillSection = () => {
                 <div className='inset-0 text-start pr-[95px] pt-[5px] pl-[5px] self-start w-[260px] sm:w-[380px] textSkillDiv text-text '>
                   <h3 className='text-sm sm:text-xl italic bold'>HTML/CSS/JS</h3>
                   <span className='text-[10px] leading-[2] block'>
-                  I build responsive web pages with HTML, CSS, and JavaScript for structure and interactivity.
+                    I build responsive web pages with HTML, CSS, and JavaScript for structure and interactivity.
                   </span>
                 </div>
-                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover" 
-                style={{ backgroundImage: "url('/images/html.png')" }}></div>
+                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
+                  style={{ backgroundImage: "url('/images/html.png')" }}></div>
               </div>
 
             </div>

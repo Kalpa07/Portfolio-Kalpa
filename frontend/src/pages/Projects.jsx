@@ -45,7 +45,7 @@ const Projects = () => {
             <div className='flex justify-between text-4xl mb-5 mt-5 '>
                 <div className="ml-5 sm:ml-15">
                     <a href="/" className="">
-                        <CircleArrowLeft className='!w-[50px] !h-[50px]'/>
+                        <CircleArrowLeft className='!w-[50px] !h-[50px]' />
                     </a>
                 </div>
                 <div className="  bg-primary w-70 sm:w-100 p-2">
@@ -59,7 +59,6 @@ const Projects = () => {
                 snap-x snap-mandatory'>
                 {projectData.map((project, index) => {
                     const isExpanded = expandedIndex === index;
-
                     return (
                         <div key={index} className="flex flex-col relative snap-start ml-10 mt-60 sm:mt-5  mb-60 sm:mb-0">
                             <h2 className={`

@@ -8,9 +8,8 @@ const ProjectSection = () => {
   const navigate = useNavigate();
 
   return (
-    // mt-20s
     <div id="projects" className="flex justify-center relative h-150 mt-20 ">
-      
+
       <CursorCustom isHoveringButton={isHoveringButton} />
       <div className="absolute inset-0 w-max justify-self-center">
         <img src="/images/uiPhoneBg.png" className="h-180 visible sm:hidden" />
@@ -19,7 +18,7 @@ const ProjectSection = () => {
       <div className="absolute z-10 h-150 flex items-center">
         <button
           type="button"
-          onClick={()=>{navigate("/projects")}}
+          onClick={() => { navigate("/projects") }}
           onMouseEnter={() => setIsHoveringButton(true)}
           onMouseLeave={() => setIsHoveringButton(false)}
           className="bg-cta-hover border-color-cta border-6 w-60 h-18 

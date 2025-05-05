@@ -23,15 +23,13 @@ const Contact = () => {
     }));
   };
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
     emailjs
       .sendForm(
-        serviceId ,
-        templateId ,
+        serviceId,
+        templateId,
         e.target,
         publicKey
       )
@@ -68,9 +66,9 @@ const Contact = () => {
           <span className="italic font-poppins text-xl sm:text-3xl bolder">Hi!</span> and
           let’s turn your vision into something beautiful.
         </p>
-          <span className='text-lg sm:text-xl'>
-            Or, if you prefer, <a href="mailto:hikalpa07@gmail.com" className='underline'>email me directly!</a>
-          </span>
+        <span className='text-lg sm:text-xl'>
+          Or, if you prefer, <a href="mailto:hikalpa07@gmail.com" className='underline'>email me directly!</a>
+        </span>
       </div>
       <div className="flex flex-col p-2">
         <form onSubmit={handleSubmit}>

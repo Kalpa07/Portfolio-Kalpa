@@ -17,7 +17,6 @@ const HeroSection = ({  handleThemeToggle }) => {
   return (
     <>
       <div className='flex flex-row justify-between hero-section'>
-        {/* Lamp toggle */}
         <div  onClick={handleThemeToggle} className='cursor-pointer'>
           <img 
             src='/images/lamp.png'
@@ -26,13 +25,11 @@ const HeroSection = ({  handleThemeToggle }) => {
           />
         </div>
 
-        {/* Desktop Nav Links */}
         <div className='hidden sm:flex gap-10 mr-10 mt-10 font-poppins text-text text-lg tracking-wider'>
           <div className='cursor-pointer hover:text-gray-300 hover:underline' onClick={() => { scrollTo("projects"); setIsSidebarOpen(false);}}>Projects</div>
           <div className='cursor-pointer hover:text-gray-300 hover:underline' onClick={() => { scrollTo("contact"); setIsSidebarOpen(false);}}>Contact</div>
         </div>
 
-        {/* Mobile Hamburger */}
         <div className='sm:hidden'>
           {isSidebarOpen ? (
             <X className='text-text w-6 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
@@ -42,7 +39,6 @@ const HeroSection = ({  handleThemeToggle }) => {
         </div>
       </div>
 
-      {/* Mobile Sidebar */}
       <div className={` fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${
         isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
@@ -53,7 +49,6 @@ const HeroSection = ({  handleThemeToggle }) => {
         </div>
       </div>
 
-      {/* Name, Description, Socials */}
       <div className='sm:flex flex-row justify-center'>
         <div className='justify-self-center'>
           <h1 className='font-dancing text-[80px] -rotate-[8.24deg] mt-20 sm:mt-10 sm:text-[160px]'>Kalpa Teli</h1>
