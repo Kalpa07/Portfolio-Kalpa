@@ -5,7 +5,7 @@ import '../index.css';
 const SkillSection = () => {
   return (
     <>
-      <div className='h-screen flex flex-col items-center justify-center'>
+      <div className='h-screen flex flex-col items-center justify-center skill-section'>
         <div>
           <div className='justify-items-center'>
             <h1 className='text-[40px] sm:text-[60px]'> Skills</h1>

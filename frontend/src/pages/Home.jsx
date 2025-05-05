@@ -72,6 +72,7 @@ const ScrollSections = () => {
         <div className="absolute bottom-0 w-full h-20 bg-gradient-to-b from-transparent to-[#1e293b] pointer-events-none z-10"></div>
       </div>
     </div>
+
     <div className="top-0 w-full h-32 bg-gradient-to-b from-[#1e293b] to-transparent pointer-events-none z-10"></div>
   
     {/* Vertical Scroll Sections */}

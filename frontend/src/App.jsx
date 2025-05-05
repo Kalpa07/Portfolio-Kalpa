@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Portfolio from './pages/Portfolio'
 import Projects from './pages/Projects';
 import Home from './pages/Home';
 import { Route,Routes } from 'react-router-dom';

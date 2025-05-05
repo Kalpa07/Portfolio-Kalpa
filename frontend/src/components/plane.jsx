@@ -106,6 +106,20 @@ const PaperPlane = () => {
     });
   };
 
+  const plane = planeRef.current;
+  
+  const savePosition = () => {
+    const rect = plane.getBoundingClientRect();
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+
+    sessionStorage.setItem("planeX", rect.left + scrollLeft);
+    sessionStorage.setItem("planeY", rect.top + scrollTop);
+  };
+
+  // Wait until the animation completes
+  setTimeout(savePosition, 2000); 
+
     setupAnimation();
     window.addEventListener("resize", setupAnimation);
     return () => window.removeEventListener("resize", setupAnimation);

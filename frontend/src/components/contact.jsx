@@ -57,12 +57,12 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[60px]">
-      <div className="p-5 sm:p-2">
-        <h2 className="text-primary text-4xl sm:text-6xl w-120 sm:w-150">
+      <div className="p-5 sm:p-2 justify-items-center sm:justify-items-normal">
+        <h2 className="text-primary text-4xl sm:text-6xl w-120 sm:w-150 text-center sm:text-start">
           Paper planes, pixels, and possibilities!
         </h2>
         <hr className="w-80 sm:w-150 text-sm ml-[20px] mb-5 mt-5 text-text"></hr>
-        <p className=" w-110 sm:w-180 text-xl sm:text-2xl">
+        <p className=" w-110 sm:w-180 text-xl sm:text-2xl text-center sm:text-start">
           Have an idea flying around in your mind? Let’s catch it together. <br />
           I’m just a message away — say{' '}
           <span className="italic font-poppins text-xl sm:text-3xl bolder">Hi!</span> and
