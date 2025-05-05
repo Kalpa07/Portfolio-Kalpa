@@ -11,6 +11,10 @@ const HeroSection = ({ handleThemeToggle }) => {
       document.body.classList.add('light-theme');
       setTheme('light');
     }
+    else{
+      document.body.classList.add('dark-theme');
+      setTheme('dark');
+    }
   }, []);
 
   const toggleTheme = () => {

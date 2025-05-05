@@ -77,7 +77,7 @@ const ScrollSections = () => {
         </div>
         <div className="h-screen bg-base-100 flex flex-col justify-between items-center theme-text text-4xl snap-start about-container">
           <About className="" />
-          <div className="bg-primary-color h-10 w-full bottom-0 flex justify-between">
+          <div className="z-[999] bg-primary-color h-10 w-full bottom-0 flex justify-between">
             <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>
               <Copyright className="inline h-4 w-4" /> Kalpa Teli 2025
             </h4>

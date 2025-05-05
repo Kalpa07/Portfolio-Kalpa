@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[60px]">
       <div className="p-5 sm:p-2 justify-items-center sm:justify-items-normal">
-        <h2 className="text-primary-color text-4xl sm:text-6xl w-120 sm:w-150 text-center sm:text-start">
+        <h2 className="theme-primary-color text-4xl sm:text-6xl w-120 sm:w-150 text-center sm:text-start">
           Paper planes, pixels, and possibilities!
         </h2>
         <hr className="w-80 sm:w-150 text-sm ml-[20px] mb-5 mt-5 theme-text"></hr>

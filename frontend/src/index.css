@@ -169,7 +169,7 @@
     background-image: url('/images/BackgroundLight1.png');
   }
   
-  .dark .bg-skill-light {
+  .dark-theme .bg-skill-light {
     background-image: url('/images/Background2.png');
   }
   
