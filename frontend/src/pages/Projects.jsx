@@ -48,7 +48,7 @@ const Projects = () => {
                         <CircleArrowLeft className='!w-[50px] !h-[50px]' />
                     </a>
                 </div>
-                <div className="  bg-primary w-70 sm:w-100 p-2">
+                <div className="  bg-primary-color w-70 sm:w-100 p-2">
                     <h1 >Projects</h1>
                 </div>
             </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                                         style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                         onMouseEnter={() => setHoveredIndex(index)}
                                         onMouseLeave={() => setHoveredIndex(null)}>
-                                        <div className={`${isExpanded ? 'hidden' : 'visible'} inset-0 z-10 bg-primary opacity-80 rounded-10 
+                                        <div className={`${isExpanded ? 'hidden' : 'visible'} inset-0 z-10 bg-primary-color opacity-80 rounded-10 
                                         h-full w-120 absolute transition-all duration-[500ms] ease-in-out group-hover:-translate-y-full`
                                         } />
                                     </div>
@@ -109,7 +109,7 @@ const Projects = () => {
                                 <div className="flex flex-row self-end gap-3 mt-4">
                                     <button
                                         onClick={() => toggleExpand(index)}
-                                        className="text-sm hover:underline text-text transition"
+                                        className="text-sm hover:underline theme-text transition"
                                     >
                                         {isExpanded ? 'Less Info ~' : 'More Info ~'}
                                     </button>
@@ -120,7 +120,7 @@ const Projects = () => {
                 })}
             </div>
             <div className='flex justify-between text-4xl mb-5 mt-5'>
-                <div className="bg-primary p-2">
+                <div className="bg-primary-color p-2">
                     <a href="https://github.com/Kalpa07" className=" ml-40 mr-5">
                         More Projects
                     </a>

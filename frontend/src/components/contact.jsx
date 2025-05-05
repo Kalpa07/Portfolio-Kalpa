@@ -56,10 +56,10 @@ const Contact = () => {
   return (
     <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[60px]">
       <div className="p-5 sm:p-2 justify-items-center sm:justify-items-normal">
-        <h2 className="text-primary text-4xl sm:text-6xl w-120 sm:w-150 text-center sm:text-start">
+        <h2 className="text-primary-color text-4xl sm:text-6xl w-120 sm:w-150 text-center sm:text-start">
           Paper planes, pixels, and possibilities!
         </h2>
-        <hr className="w-80 sm:w-150 text-sm ml-[20px] mb-5 mt-5 text-text"></hr>
+        <hr className="w-80 sm:w-150 text-sm ml-[20px] mb-5 mt-5 theme-text"></hr>
         <p className=" w-110 sm:w-180 text-xl sm:text-2xl text-center sm:text-start">
           Have an idea flying around in your mind? Let’s catch it together. <br />
           I’m just a message away — say{' '}
@@ -108,7 +108,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="text-text hover:cursor-pointer btn btn-primary hover:scale-105 transform transition-transform duration-300 text-lg sm:text-xl hover:border p-2 px-5 rounded-3xl w-20 sm:w-40 mt-10"
+              className="text-white hover:cursor-pointer border-none btn bg-primary-color hover:scale-105 transform transition-transform duration-300 text-lg sm:text-xl hover:border-solid p-2 px-5 rounded-3xl w-20 sm:w-40 mt-10"
               disabled={loading}
             >
               {loading ? 'Sending...' : 'Send'}

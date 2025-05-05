@@ -19,10 +19,10 @@ const CursorGlow = () => {
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed z-[9999] w-250 h-250 rounded-full opacity-40 mix-blend-difference"
+      className="pointer-events-none fixed z-[9999] w-200 h-200 rounded-full opacity-50 dark:opacity-20 mix-blend-difference"
       style={{
         transform: "translate(-50%, -50%)",
-        background: "radial-gradient(circle, rgba(98,0,255,0.4) 0%, rgba(0,0,0,0) 80%)",
+        background: "radial-gradient(circle, var(--cursor-color) 0%, var(--transparent-color) 80%)",
       }}
     ></div>
   );

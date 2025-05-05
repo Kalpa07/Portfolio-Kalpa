@@ -21,9 +21,9 @@ const ProjectSection = () => {
           onClick={() => { navigate("/projects") }}
           onMouseEnter={() => setIsHoveringButton(true)}
           onMouseLeave={() => setIsHoveringButton(false)}
-          className="bg-cta-hover border-color-cta border-6 w-60 h-18 
+          className="bg-cta-hover border-[var(--color-cta)] border-6 w-60 h-18 
             font-poppins text-3xl font-medium shadow-2xl rounded-[20px] cursor-none
-            transform transition-transform duration-300 hover:scale-110"
+            transform transition-transform duration-300 hover:scale-110 text-white" 
           style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.4)' }}
         >
           Projects
