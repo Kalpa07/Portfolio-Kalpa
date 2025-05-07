@@ -48,7 +48,7 @@ const HeroSection = ({ handleThemeToggle }) => {
             alt="Toggle Theme"
             onClick={toggleTheme}
           />
-          <div className='hidden dark:block dark:opacity-20 rounded w-100 h-100 ml-25 top-35 fixed z-[-9999] dark:mix-blend-difference'
+          <div className='hidden dark:block dark:opacity-20 rounded w-100 h-100 ml-10 top-20 sm:ml-25 sm:top-35 fixed z-[-9999] dark:mix-blend-difference'
             style={{
               transform: "translate(-50%, -50%)",
               background: "radial-gradient(circle, #FFAE00 0%, var(--transparent-color) 70%)",
