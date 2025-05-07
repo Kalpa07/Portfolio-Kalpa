@@ -46,11 +46,11 @@ const PaperPlane = () => {
         { x: 65, y: -90 },
         { x: 60, y: -40 },
         { x: 55, y: 0 },
-        { x: 60, y: 100 },
-        { x: 62, y: 240 },
-        { x: 66, y: 360 },
-        { x: 70, y: 375 },
-      ];
+        { x: 57, y: 100 },
+        { x: 60, y: 240 },
+        { x: 63, y: 280 },
+        { x: 65, y: 300 }, // ⬆️ raised further
+      ];      
 
       const timeline = gsap.timeline({
         scrollTrigger: {
@@ -116,7 +116,7 @@ const PaperPlane = () => {
   return (
     <div
       ref={wrapperRef}
-      className="absolute top-[40%] left-[32%] sm:top-[58%] sm:left-[21%] z-50 w-[100px] h-[100px] sm:w-[180px] sm:h-[180px]"
+      className="absolute top-[44%] left-[32%] sm:top-[63%] sm:left-[21%] z-5 w-[100px] h-[100px] sm:w-[180px] sm:h-[180px]"
     >
       <img
         ref={planeRef}

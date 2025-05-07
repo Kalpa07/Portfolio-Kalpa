@@ -69,7 +69,7 @@ const HeroSection = ({ handleThemeToggle }) => {
         </div>
       </div>
 
-      <div className={` fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-50 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+      <div className={` fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-10 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className='relative flex flex-col items-end p-6 gap-6 theme-text font-poppins text-lg'>
           <X className='w-8 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
@@ -92,7 +92,7 @@ const HeroSection = ({ handleThemeToggle }) => {
           </div>
           <div className='flex flex-col sm:flex-row sm:self-end gap-5 mt-10 sm:mt-5 mr-5 sm:mr-2 order-1 sm:order-2'>
             <div className='relative group self-center w-8'>
-              <a href="/documents/Resume-KalpaTeli.pdf" target="_blank" rel="noopener noreferrer" download><FileUser className='height-[20px]' /></a>
+              <a href="/documents/Resume-Kalpa Teli.pdf" target="_blank" rel="noopener noreferrer" download><FileUser className='height-[20px]' /></a>
               <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
                 Resume
               </div>

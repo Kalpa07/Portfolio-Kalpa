@@ -45,11 +45,11 @@ const Projects = () => {
             <div className='flex justify-between text-4xl mb-5 mt-5 '>
                 <div className="ml-5 sm:ml-15">
                     <a href="/" className="">
-                        <CircleArrowLeft className='!w-[50px] !h-[50px]' />
+                        <CircleArrowLeft className='!w-[40px] !h-[40px] sm:!w-[50px] sm:!h-[50px]' />
                     </a>
                 </div>
-                <div className="  bg-primary-color w-70 sm:w-100 p-2">
-                    <h1 >Projects</h1>
+                <div className="bg-primary-color w-70 sm:w-100 p-2">
+                    <h1 className="text-2xl sm:text-4xl">Projects</h1>
                 </div>
             </div>
             <div className='flex flex-row sm:grid sm:justify-items-center
@@ -92,12 +92,12 @@ const Projects = () => {
                                         <p>{project.description}</p>
                                         <div className="mt-10 flex gap-4">
                                             {project.github && (
-                                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="theme-primary-color hover:underline">
                                                     View Code
                                                 </a>
                                             )}
                                             {project.live && (
-                                                <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-color-cta hover:underline">
+                                                <a href={project.live} target="_blank" rel="noopener noreferrer" className="theme-cta hover:underline">
                                                     View Demo
                                                 </a>
                                             )}
@@ -109,7 +109,7 @@ const Projects = () => {
                                 <div className="flex flex-row self-end gap-3 mt-4">
                                     <button
                                         onClick={() => toggleExpand(index)}
-                                        className="text-sm hover:underline theme-text transition"
+                                        className="text-sm hover:underline text-white transition"
                                     >
                                         {isExpanded ? 'Less Info ~' : 'More Info ~'}
                                     </button>
@@ -119,7 +119,7 @@ const Projects = () => {
                     );
                 })}
             </div>
-            <div className='flex justify-between text-4xl mb-5 mt-5'>
+            <div className='flex justify-between text-2xl sm:text-4xl mb-5 mt-5'>
                 <div className="bg-primary-color p-2">
                     <a href="https://github.com/Kalpa07" className=" ml-40 mr-5">
                         More Projects

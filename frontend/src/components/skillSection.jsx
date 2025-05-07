@@ -7,7 +7,7 @@ const SkillSection = () => {
       <div className='h-screen flex flex-col items-center justify-center skill-section'>
         <div>
           <div className='justify-items-center'>
-            <h1 className='text-[40px] sm:text-[60px] theme-text'> Skills</h1>
+            <h1 className='text-[35px] sm:text-[60px] theme-text'> Skills</h1>
           </div>
           <div className='mb-2 '>
             <div className='flex flex-col sm:grid sm:grid-cols-2 gap-x-16 sm:gap-x-30 gap-y-2 sm:gap-y-5 '>
@@ -20,7 +20,7 @@ const SkillSection = () => {
                     I build dynamic, reusable UI components with React.js for high-performance web applications.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
+                <div className="absolute z-10 bg-base-100 rounded-full h-15 w-15 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
                   style={{ backgroundImage: "url('/images/react.png')" }}></div>
               </div>
 
@@ -32,7 +32,7 @@ const SkillSection = () => {
                     I use Angular to develop scalable, modular frontend applications with TypeScript for robust functionality.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 skillImg1 shadow-lg bg-cover"
+                <div className="absolute z-10 bg-base-100 rounded-full self-end h-15 w-15 sm:h-30 sm:w-30 skillImg1 shadow-lg bg-cover"
                   style={{ backgroundImage: "url('/images/angular.png')" }}>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const SkillSection = () => {
                     I design user-friendly interfaces in Figma for smooth UI/UX collaboration and prototyping.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
+                <div className="absolute z-10 bg-base-100 rounded-full h-15 w-15 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover"
                   style={{ backgroundImage: "url('/images/figma.png')" }}></div>
               </div>
 
@@ -57,7 +57,7 @@ const SkillSection = () => {
                     I use Tailwind CSS for fast, responsive styling with utility-first classes.
                   </span>
                 </div>
-                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
+                <div className="absolute bg-base-100 z-10 rounded-full self-end h-15 w-15 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
                   style={{ backgroundImage: "url('/images/tailwind.png')" }}></div>
               </div>
 
@@ -69,7 +69,7 @@ const SkillSection = () => {
                     I use TypeScript to enhance code quality and maintainability with static typing.
                   </span>
                 </div>
-                <div className="absolute z-10 bg-base-100 rounded-full sm:bg-[length:120px] bg-[length:80px] h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg bg-fit bg-no-repeat "
+                <div className="absolute z-10 bg-base-100 rounded-full sm:bg-[length:120px] h-15 w-15 sm:h-30 sm:w-30 shadow-lg skillImg bg-cover bg-no-repeat "
                   style={{ backgroundImage: "url('/images/ts.png')" }}></div>
               </div>
 
@@ -81,7 +81,7 @@ const SkillSection = () => {
                     I build responsive web pages with HTML, CSS, and JavaScript for structure and interactivity.
                   </span>
                 </div>
-                <div className="absolute bg-base-100 z-10 rounded-full self-end h-20 w-20 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
+                <div className="absolute bg-base-100 z-10 rounded-full self-end h-15 w-15 sm:h-30 sm:w-30 shadow-lg skillImg1 bg-cover"
                   style={{ backgroundImage: "url('/images/html.png')" }}></div>
               </div>
 
