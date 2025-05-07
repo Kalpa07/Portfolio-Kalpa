@@ -35,7 +35,7 @@ const PaperPlane = () => {
         { x: 270, y: 30 },
         { x: 320, y: 0 },
         { x: 450, y: 80 },
-        { x: 570, y: 150 },
+        { x: 570, y: 120 },
       ];
 
       const mobilePath = [
