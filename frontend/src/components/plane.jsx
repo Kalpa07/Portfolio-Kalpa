@@ -116,7 +116,7 @@ const PaperPlane = () => {
   return (
     <div
       ref={wrapperRef}
-      className="absolute top-[44%] left-[32%] sm:top-[63%] sm:left-[21%] z-5 w-[100px] h-[100px] sm:w-[180px] sm:h-[180px]"
+      className="absolute top-[38%] left-[32%] sm:top-[63%] sm:left-[21%] z-5 w-[100px] h-[100px] sm:w-[180px] sm:h-[180px]"
     >
       <img
         ref={planeRef}
