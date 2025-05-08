@@ -19,7 +19,7 @@ const projectData = [
         title: "Personal Portfolio",
         description: "An animated personal portfolio showcasing my skills and projects. Featuring smooth transitions, paper plane animation, and a light/dark theme toggle, built with HTML, CSS, JavaScript, and Tailwind.",
         github: "https://github.com/Kalpa07/Portfolio-Kalpa",
-        live: "https://kalpa-portfolio.com",
+        live: "https://kalpateli07.netlify.app/",
         image: "/images/bgPortfolio.png"
     },
     {
