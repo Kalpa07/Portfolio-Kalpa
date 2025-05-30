@@ -23,9 +23,9 @@ const projectData = [
         image: "/images/bgPortfolio.png"
     },
     {
-        title: "Next Project",
-        description: "In Progress...",
-        github: "",
+        title: "Kartana (upcoming)",
+        description: "A hybrid Web2 + Web3 e-commerce app with traditional and blockchain payments, built with Next.js, Tailwind, and Web3",
+        github: "https://github.com/Kalpa07/Kartana",
         live: "",
         image: "/images/BackgroundLight.png"
     }
@@ -70,13 +70,6 @@ const Projects = () => {
                                 {project.title}
                             </h2>
 
-                            {index === 3 && !isExpanded && (
-                                <p className={`text-2xl font-bold z-20 transition-all duration-[2000ms] ease-in-out
-                                absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-black`}
-                                >
-                                    In Progress...
-                                </p>
-                            )}
                             <div className="flex flex-col">
                                 <div className="flex flex-row gap-5 w-120 h-auto">
                                     <div className={`mt-10 rounded-10 h-60 
@@ -105,16 +98,14 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                            {index !== 3 && (
-                                <div className="flex flex-row self-end gap-3 mt-4">
-                                    <button
-                                        onClick={() => toggleExpand(index)}
-                                        className="text-sm hover:underline text-white transition"
-                                    >
-                                        {isExpanded ? 'Less Info ~' : 'More Info ~'}
-                                    </button>
-                                </div>
-                            )}
+                            <div className="flex flex-row self-end gap-3 mt-4">
+                                <button
+                                    onClick={() => toggleExpand(index)}
+                                    className="text-sm hover:underline text-white transition"
+                                >
+                                    {isExpanded ? 'Less Info ~' : 'More Info ~'}
+                                </button>
+                            </div>
                         </div>
                     );
                 })}
