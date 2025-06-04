@@ -49,7 +49,7 @@ const PaperPlane = () => {
         { x: 57, y: 100 },
         { x: 60, y: 240 },
         { x: 63, y: 280 },
-        { x: 65, y: 300 }, // ⬆️ raised further
+        { x: 65, y: 300 }, 
       ];      
 
       const timeline = gsap.timeline({

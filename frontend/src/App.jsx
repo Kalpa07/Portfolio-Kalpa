@@ -1,11 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useState } from 'react'
 import Projects from './pages/Projects';
 import Home from './pages/Home';
 import { Route,Routes } from 'react-router-dom';
+import Loader from "./components/Loader";
 
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
 
   localStorage.setItem("theme",'dark')
@@ -21,6 +26,8 @@ const App = () => {
   }
 
   },[]);
+
+  if (loading) return <Loader onComplete={() => setLoading(false)} />;
 
   return (
     <div className="data-theme:selectedTheme">
