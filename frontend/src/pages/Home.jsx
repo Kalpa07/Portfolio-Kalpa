@@ -51,13 +51,11 @@ const ScrollSections = () => {
       <CursorGlow />
       <div ref={horizontalRef} className="flex h-screen w-[200vw] snap-x snap-start">
         <PaperPlane />
-        {/* Section 1 */}
         <div
           className="horizontal-panel h-screen w-screen bg-cover bg-center bg-home-light snap-start"
         >
           <HeroSection handleThemeToggle={handleThemeToggle} />
         </div>
-        {/* Section 2 */}
         <div
           className="horizontal-panel h-screen w-screen ml-[-2px] bg-cover bg-center skill-section relative snap-start bg-skill-light"
         >
@@ -81,7 +79,6 @@ const ScrollSections = () => {
             <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>
               <Copyright className="inline h-4 w-4" /> Kalpa Teli 2025
             </h4>
-            {/* footer */}
             <div className='flex gap-4 mr-5 text-white'>
               <div className='relative group self-center w-8'>
                 <a href="https://github.com/Kalpa07" ><Github className=' hover:h-7 hover:w-7'></Github></a>
