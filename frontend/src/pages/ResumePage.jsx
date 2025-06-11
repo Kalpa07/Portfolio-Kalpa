@@ -1,5 +1,5 @@
 
-const Resume = () => {
+const ResumePage = () => {
 
   return (
     <>
@@ -14,4 +14,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default ResumePage;

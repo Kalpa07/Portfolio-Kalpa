@@ -3,7 +3,7 @@ import Projects from './pages/Projects';
 import Home from './pages/Home';
 import { Route,Routes } from 'react-router-dom';
 import Loader from "./components/Loader";
-import Resume from './pages/Resume';
+import ResumePage from './pages/ResumePage';
 
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
      <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/projects" element={<Projects/>}/>
-      <Route path="/resume-Kalpa" element={<Resume/>}/>
+      <Route path="/resume-Kalpa" element={<ResumePage/>}/>
     </Routes>
     </div>
   )
