@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, FileUser, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = ({ handleThemeToggle }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -93,7 +94,7 @@ const HeroSection = ({ handleThemeToggle }) => {
           <div className='flex flex-col sm:flex-row sm:self-end gap-5 mt-10 sm:mt-5 mr-5 sm:mr-2 order-1 sm:order-2'>
             <div className='relative group self-center w-8'>
               {/* <a href="/documents/Kalpa Teli-Resume.pdf" target="_blank" rel="opener noreferrer" download><FileUser className='height-[20px]' /></a> */}
-              <a href="/resume-Kalpa"><FileUser className='height-[20px]' /></a>
+              <Link to="/resume-Kalpa"><FileUser className='height-[20px]' /></Link>
               <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
                 Resume
               </div>
