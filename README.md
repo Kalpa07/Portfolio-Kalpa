@@ -28,11 +28,3 @@ This interactive and animated portfolio showcases my skills, projects, and creat
 - **Fonts:** Dancing Script, Roboto, Poppins
 
 ---
-
-## Getting Started
-
-1. **Clone the repo**
-
-```bash
-git clone https://github.com/Kalpa07/Portfolio-Kalpa.git
-cd Portfolio-Kalpa
