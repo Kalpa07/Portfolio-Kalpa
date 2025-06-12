@@ -1,27 +1,26 @@
-# 🌟 Kalpa Teli – Portfolio
+# Kalpa Teli – Portfolio
 
 Welcome to my personal portfolio website!  
 This interactive and animated portfolio showcases my skills, projects, and creative journey as a Frontend Developer and UI/UX Designer.
 
-🎯 **Live Demo:** [kalpateli07.netlify.app](https://kalpateli07.netlify.app)  
-🔗 [Connect on LinkedIn](https://www.linkedin.com/in/kalpa-teli-4b3489204/)  
+**Live Demo:** [kalpateli07.netlify.app](https://kalpateli07.netlify.app)  
+[Connect on LinkedIn](https://www.linkedin.com/in/kalpa-teli-4b3489204/)  
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎨 Animated Hero Section with Name and Short Description
-- 🌗 Light/Dark Theme Toggle (Bulb Icon)
-- 🛩️ Paper Plane Animation Leading to Skills Section
-- 🧠 Skill Cards with Hover Effects and Descriptions
-- 📄 Paper Unfold Animation into UI Design Visual
-- 📁 Projects Section with Interactive Cards (GitHub / Live / Case Study)
-- 🎯 Contact Section & Return Button
-- 🔍 Fully Responsive & Scroll-Driven Animations
+- Animated Hero Section with Name and Short Description
+- Light/Dark Theme Toggle (Bulb Icon)
+- Paper Plane Animation Leading to Skills Section
+- Skill Cards with Hover Effects and Descriptions
+- Projects Section with Interactive Cards (GitHub / Live / Case Study)
+- Contact Section 
+- Fully Responsive & Scroll-Driven Animations
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React + Vite
 - **Styling:** Tailwind CSS, Daisy UI
@@ -30,7 +29,7 @@ This interactive and animated portfolio showcases my skills, projects, and creat
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repo**
 
