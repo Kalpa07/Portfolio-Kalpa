@@ -2,6 +2,13 @@ import { CircleArrowLeft, SendToBack, StepBack } from 'lucide-react';
 import { React, useState } from 'react'
 const projectData = [
     {
+        title: "TerraNest",
+        description: "TerraNest is a modern, responsive real estate landing page built with React and GSAP, featuring smooth scroll animations and interactive UI elements. ",
+        github: "https://github.com/Kalpa07/Real-estate",
+        live: "https://real-estate-one-ecru.vercel.app/",
+        image: "/images/terranest.png"
+    },
+    {
         title: "Nexvent",
         description: "A global event discovery app (excluding personal events), designed in Figma and built using React. Features a clean UI for browsing online and offline events. Backend integration planned.",
         github: "https://github.com/Kalpa07/Nexvent",
