@@ -12,7 +12,7 @@ const HeroSection = ({ handleThemeToggle }) => {
       document.body.classList.add('light-theme');
       setTheme('light');
     }
-    else{
+    else {
       document.body.classList.add('dark-theme');
       setTheme('dark');
     }
@@ -56,11 +56,14 @@ const HeroSection = ({ handleThemeToggle }) => {
             }}></div>
         </div>
 
+        {/* Desktop Menu */}
         <div className='hidden sm:flex gap-10 mr-10 mt-10 font-poppins theme-text text-lg tracking-wider'>
-          <div className='cursor-pointer hover:underline' onClick={() => { scrollTo("projects"); setIsSidebarOpen(false); }}>Projects</div>
-          <div className='cursor-pointer hover:underline' onClick={() => { scrollTo("contact"); setIsSidebarOpen(false); }}>Contact</div>
+          <div className='cursor-pointer hover:underline' onClick={() => scrollTo("projects")}>Projects</div>
+          <div className='cursor-pointer hover:underline' onClick={() => scrollTo("contact")}>Contact</div>
+          <div className='cursor-pointer hover:underline' onClick={() => scrollTo("about")}>About</div>
         </div>
 
+        {/* Mobile Menu */}
         <div className='sm:hidden'>
           {isSidebarOpen ? (
             <X className='theme-text w-6 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
@@ -70,20 +73,21 @@ const HeroSection = ({ handleThemeToggle }) => {
         </div>
       </div>
 
-      <div className={` fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-10 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}>
+      <div className={`fixed top-0 right-0 h-full w-[40%] sm:hidden bg-base-100 z-10 transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className='relative flex flex-col items-end p-6 gap-6 theme-text font-poppins text-lg'>
           <X className='w-8 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
-          <div onClick={() => { scrollTo("projects"); setIsSidebarOpen(false) }} className='absolute mt-15 cursor-pointer text-center p-2 w-40 active:bg-primary-color '>Projects</div>
-          <div onClick={() => { scrollTo("contact"); setIsSidebarOpen(false) }} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary-color '>Contact</div>
+          <div onClick={() => { scrollTo("projects"); setIsSidebarOpen(false) }} className='absolute mt-15 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>Projects</div>
+          <div onClick={() => { scrollTo("contact"); setIsSidebarOpen(false) }} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>Contact</div>
+          <div onClick={() => { scrollTo("about"); setIsSidebarOpen(false) }} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>About</div>
         </div>
       </div>
 
+      {/* Hero Text */}
       <div className='sm:flex flex-row justify-center theme-text'>
         <div className='justify-self-center'>
           <h1 className='font-dancing text-[80px] -rotate-[8.24deg] mt-20 sm:mt-10 sm:text-[160px]'>Kalpa Teli</h1>
         </div>
-        <div className=' flex flex-row sm:flex-col sm:justify-items-end justify-end mt-40 sm:mt-20 ml-[50px]'>
+        <div className='flex flex-row sm:flex-col sm:justify-items-end justify-end mt-40 sm:mt-20 ml-[50px]'>
           <div className='w-100 sm:w-120 sm:text-end order-2 sm:order-1'>
             <h1 className='font-poppins font-extrabold text-lg sm:text-3xl italic'>Frontend Developer</h1>
             <p className='text-md sm:text-xl mt-2 font-light'>
@@ -116,6 +120,6 @@ const HeroSection = ({ handleThemeToggle }) => {
       </div>
     </>
   );
-}
+};
 
 export default HeroSection;

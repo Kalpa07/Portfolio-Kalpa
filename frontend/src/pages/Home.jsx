@@ -73,7 +73,7 @@ const ScrollSections = () => {
         <div id="contact" className="h-screen bg-base-100 flex justify-center items-center theme-text text-4xl snap-start ">
           <Contact />
         </div>
-        <div className="h-screen bg-base-100 flex flex-col justify-between items-center theme-text text-4xl snap-start about-container">
+        <div id="about" className="h-screen bg-base-100 flex flex-col justify-between items-center theme-text text-4xl snap-start about-container">
           <About className="" />
           <div className="z-[999] bg-primary-color h-10 w-full bottom-0 flex justify-between">
             <h4 className='text-white text-lg self-center text-center ml-5 font-100 font-poppins'>
@@ -100,7 +100,7 @@ const ScrollSections = () => {
               </div>
             </div>
           </div>
-          <Bubbles/>
+          <Bubbles />
         </div>
       </div>
     </div>

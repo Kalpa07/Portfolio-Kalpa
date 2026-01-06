@@ -2,6 +2,13 @@ import { CircleArrowLeft, SendToBack, StepBack } from 'lucide-react';
 import { React, useState } from 'react'
 const projectData = [
     {
+        title: "Kartana",
+        description: "Full-stack e-commerce platform built with Next.js, TailwindCSS, GraphQL, Node.js, MongoDB, featuring product browsing, cart management and checkout",
+        github: "https://github.com/Kalpa07/Kartana",
+        live: "",
+        image: "/images/kartanabg.png"
+    },
+    {
         title: "TerraNest",
         description: "TerraNest is a modern, responsive real estate landing page built with React and GSAP, featuring smooth scroll animations and interactive UI elements. ",
         github: "https://github.com/Kalpa07/Real-estate",
@@ -29,16 +36,7 @@ const projectData = [
         live: "https://kalpateli07.netlify.app/",
         image: "/images/bgPortfolio.png"
     },
-    {
-        title: "Kartana (upcoming)",
-        description: "A hybrid Web2 + Web3 e-commerce app with traditional and blockchain payments, built with Next.js, Tailwind, and Web3",
-        github: "https://github.com/Kalpa07/Kartana",
-        live: "",
-        image: "/images/BackgroundLight.png"
-    }
 ];
-
-
 
 const Projects = () => {
     const [expandedIndex, setExpandedIndex] = useState(null);
