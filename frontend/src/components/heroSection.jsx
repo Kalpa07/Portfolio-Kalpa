@@ -78,7 +78,7 @@ const HeroSection = ({ handleThemeToggle }) => {
           <X className='w-8 h-6 cursor-pointer' onClick={() => setIsSidebarOpen(false)} />
           <div onClick={() => { scrollTo("projects"); setIsSidebarOpen(false) }} className='absolute mt-15 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>Projects</div>
           <div onClick={() => { scrollTo("contact"); setIsSidebarOpen(false) }} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>Contact</div>
-          <div onClick={() => { scrollTo("about"); setIsSidebarOpen(false) }} className='absolute mt-30 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>About</div>
+          <div onClick={() => { scrollTo("about"); setIsSidebarOpen(false) }} className='absolute mt-45 cursor-pointer text-center p-2 w-40 active:bg-primary-color'>About</div>
         </div>
       </div>
 
@@ -87,36 +87,46 @@ const HeroSection = ({ handleThemeToggle }) => {
         <div className='justify-self-center'>
           <h1 className='font-dancing text-[80px] -rotate-[8.24deg] mt-20 sm:mt-10 sm:text-[160px]'>Kalpa Teli</h1>
         </div>
-        <div className='flex flex-row sm:flex-col sm:justify-items-end justify-end mt-40 sm:mt-20 ml-[50px]'>
-          <div className='w-100 sm:w-120 sm:text-end order-2 sm:order-1'>
-            <h1 className='font-poppins font-extrabold text-lg sm:text-3xl italic'>Frontend Developer</h1>
-            <p className='text-md sm:text-xl mt-2 font-light'>
+        <div
+          className="
+              flex flex-col
+              sm:flex-col
+              justify-center sm:justify-end
+              mt-24 sm:mt-22
+              ml-0 sm:ml-[50px]
+            "
+        >
+          <div className="w-full sm:w-120 text-center sm:text-end">
+            <h1 className="font-poppins font-extrabold text-lg sm:text-3xl italic">
+              Frontend Developer
+            </h1>
+            <p className="text-md sm:text-xl mt-2 font-light">
               Passionate about creating user-friendly, visually appealing web experiences, I blend clean code with thoughtful design.
               With a background in UI/UX and frontend development, I deliver seamless digital solutions
             </p>
           </div>
-          <div className='flex flex-col sm:flex-row sm:self-end gap-5 mt-10 sm:mt-5 mr-5 sm:mr-2 order-1 sm:order-2'>
-            <div className='relative group self-center w-8'>
-              {/* <a href="/documents/Kalpa Teli-Resume.pdf" target="_blank" rel="opener noreferrer" download><FileUser className='height-[20px]' /></a> */}
-              <Link to="/resume-Kalpa"><FileUser className='height-[20px]' /></Link>
-              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
-                Resume
-              </div>
+          <div
+            className="
+              flex flex-row
+              justify-center
+              sm:justify-end
+              gap-5
+              mt-8 sm:mt-5
+            "
+          >
+            <div className="relative group w-8">
+              <Link to="/resume-Kalpa"><FileUser className="height-[20px]" /></Link>
             </div>
-            <div className='relative group self-center w-8'>
-              <a href="https://github.com/Kalpa07"><Github className='height-[20px]' /></a>
-              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
-                Github
-              </div>
+            <div className="relative group w-8">
+              <a href="https://github.com/Kalpa07"><Github className="height-[20px]" /></a>
             </div>
-            <div className='relative group self-center w-8'>
-              <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/"><Linkedin className='height-[20px]' /></a>
-              <div className="absolute w-max -top-8 left-1/2 -translate-x-1/2 bg-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-200">
-                LinkedIn
-              </div>
+            <div className="relative group w-8">
+              <a href="https://www.linkedin.com/in/kalpa-teli-4b3489204/"><Linkedin className="height-[20px]" /></a>
             </div>
           </div>
         </div>
+
+
       </div>
     </>
   );

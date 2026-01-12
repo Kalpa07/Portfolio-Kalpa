@@ -81,7 +81,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[60px]">
+    <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[30px] sm:gap-[60px]">
 
       <div className="p-5 sm:p-2">
         <h2 className="theme-primary-color text-3xl sm:text-6xl w-90 sm:w-150">

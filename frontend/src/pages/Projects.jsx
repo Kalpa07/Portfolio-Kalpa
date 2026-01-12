@@ -57,15 +57,19 @@ const Projects = () => {
                     <h1 className="text-2xl sm:text-4xl">Projects</h1>
                 </div>
             </div>
-            <div className='flex flex-row sm:grid sm:justify-items-center
-                overflow-x-auto sm:overflow-visible 
-                gap-x-5 sm:grid-cols-2 ml-2
-                pl-10 pr-5 sm:pr-0 
-                snap-x snap-mandatory'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 sm:justify-items-center
+                overflow-x-hidden sm:overflow-visible
+                gap-y-6 sm:gap-x-5
+                px-4 sm:px-0'>
+
                 {projectData.map((project, index) => {
                     const isExpanded = expandedIndex === index;
                     return (
-                        <div key={index} className="flex flex-col relative snap-start ml-10 mt-60 sm:mt-5  mb-60 sm:mb-0">
+                        <div
+                            key={index}
+                            className="flex flex-col relative
+                                mt-10 mb-10 sm:mt-5 sm:mb-0
+                                ml-0 sm:ml-10">
                             <h2 className={`
                             text-4xl font-bold z-20 transition-all duration-[2000ms] ease-in-out w-max
                             ${isExpanded || hoveredIndex === index
@@ -78,7 +82,7 @@ const Projects = () => {
                             <div className="flex flex-col">
                                 <div className="flex flex-row gap-5 w-120 h-auto">
                                     <div className={`mt-10 rounded-10 h-60 
-                                    transition-all ease-in-out duration-[1000ms] relative overflow-hidden group ${isExpanded ? 'w-1/2' : 'w-120'}`}
+                                    transition-all ease-in-out duration-[1000ms] relative overflow-hidden group ${isExpanded ? 'w-1/4 sm:w-1/2' : 'w-95 sm:w-120'}`}
                                         style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                                         onMouseEnter={() => setHoveredIndex(index)}
                                         onMouseLeave={() => setHoveredIndex(null)}>
