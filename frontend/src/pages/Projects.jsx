@@ -91,7 +91,7 @@ const Projects = () => {
                                         } />
                                     </div>
                                     <div className={`${isExpanded ? 'block w-1/2' : 'hidden'} mt-10 transition-all ease-in-out duration-[1000ms]`}>
-                                        <p>{project.description}</p>
+                                        <p className={`w-3/4 sm:w-full `}>{project.description}</p>
                                         <div className="mt-10 flex gap-4">
                                             {project.github && (
                                                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="theme-primary-color hover:underline">

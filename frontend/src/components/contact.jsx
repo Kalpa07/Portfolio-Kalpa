@@ -83,7 +83,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-[30px] sm:gap-[60px]">
 
-      <div className="p-5 sm:p-2">
+      <div className="p-5 ml-10 sm:ml-0 sm:p-2">
         <h2 className="theme-primary-color text-3xl sm:text-6xl w-90 sm:w-150">
           Paper planes, pixels, and possibilities!
         </h2>
