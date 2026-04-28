@@ -5,8 +5,8 @@ const ResumePage = () => {
     <>
       <div className="h-full w-full bg-white dark:bg-black text-black dark:text-white flex flex-col items-center justify-start ">
         <iframe
-          src="/documents/Resume-Kalpa Teli JAN 2026.pdf"
-          title="Kalpa Teli Resume"
+          src="/document/Kalpa_Teli_Resume.pdf"
+          title="Kalpa_Teli_Resume"
           className="w-full h-screen "
         ></iframe>
       </div>
